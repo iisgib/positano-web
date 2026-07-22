@@ -822,6 +822,9 @@ h3 {
   .container { padding: 0 28px; }
   .section { padding: 84px 0; }
 
+  /* Hero logo — scale up on tablet/mobile using vw so it stays prominent */
+  .hero-logo { width: clamp(200px, 55vw, 380px); }
+
   /* Nav */
   .nav-links, .nav-cta { display: none; }
   .nav-toggle { display: flex; }
@@ -866,6 +869,8 @@ h3 {
 
   .nav-inner { padding: 0 20px; }
   .nav-logo img { height: 28px; }
+
+  .hero-logo { width: clamp(200px, 62vw, 300px); }
 
   .hero-tagline { font-size: 1.1rem; }
 
