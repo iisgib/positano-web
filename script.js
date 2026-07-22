@@ -130,4 +130,22 @@
 
   sections.forEach(sec => sectionObs.observe(sec));
 
+  // ── Video autoplay fallback (iOS Safari) ─────────────────────
+  // iOS requires video.muted = true as a DOM property (not just the HTML
+  // attribute) and may block autoplay until play() is called explicitly.
+  document.querySelectorAll('video').forEach(video => {
+    video.muted = true; // DOM property — required by iOS Safari
+    video.play().catch(() => {
+      // If autoplay is still blocked (e.g. low-power mode), retry on first
+      // user interaction so the video starts as soon as the user touches the page.
+      const resume = () => {
+        video.play().catch(() => {});
+        document.removeEventListener('touchstart', resume);
+        document.removeEventListener('click', resume);
+      };
+      document.addEventListener('touchstart', resume, { once: true, passive: true });
+      document.addEventListener('click', resume, { once: true });
+    });
+  });
+
 })();
