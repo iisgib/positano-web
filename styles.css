@@ -388,7 +388,7 @@ h3 {
 }
 
 .hero-logo {
-  width: clamp(160px, 22vw, 240px);
+  width: clamp(240px, 33vw, 360px);
   height: auto;
   object-fit: contain;
   animation: heroEntrance 1.2s 0.2s var(--ease-out) both;
