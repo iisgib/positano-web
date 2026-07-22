@@ -388,7 +388,7 @@ h3 {
 }
 
 .hero-logo {
-  width: min(1440px, 38vw);
+  width: clamp(140px, 19vw, 720px);
   margin-inline: auto;
   height: auto;
   object-fit: contain;
