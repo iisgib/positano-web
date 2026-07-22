@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Positano Ristorante — изысканная итальянская кухня в Ташкенте. Бронирование столиков: +998 99 300 01 11">
+  <title>Positano Ristorante — Ташкент</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Cormorant+SC:wght@300;400;500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ─── Navigation ─────────────────────────────────────── -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="assets/logo.png" alt="Positano Ristorante">
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#menu">Меню</a></li>
+        <li><a href="#atmosphere">Атмосфера</a></li>
+        <li><a href="#reservation">Бронирование</a></li>
+      </ul>
+      <a href="#reservation" class="nav-cta">Забронировать</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Открыть меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile drawer -->
+  <div id="mobile-menu" aria-hidden="true">
+    <ul>
+      <li><a href="#about" class="mobile-link">О нас</a></li>
+      <li><a href="#menu" class="mobile-link">Меню</a></li>
+      <li><a href="#atmosphere" class="mobile-link">Атмосфера</a></li>
+      <li><a href="#reservation" class="mobile-link">Бронирование</a></li>
+    </ul>
+    <a href="tel:+998993000111" class="mobile-phone">+998 99 300 01 11</a>
+  </div>
+  <div id="mobile-overlay"></div>
+
+  <!-- ─── Hero ───────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-media">
+      <video autoplay muted loop playsinline preload="auto">
+        <source src="assets/positano 6th.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-content">
+      <img src="assets/logo.png" alt="Positano" class="hero-logo">
+      <div class="hero-rule"></div>
+      <p class="hero-tagline">Настоящая Италия<br><em>в сердце Ташкента</em></p>
+      <a href="#reservation" class="btn-primary">Забронировать столик</a>
+    </div>
+    <a href="#about" class="hero-scroll" aria-label="Прокрутить вниз">
+      <span class="scroll-line"></span>
+    </a>
+  </section>
+
+  <!-- ─── About ──────────────────────────────────────────── -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-text reveal">
+          <span class="section-label">Наша история</span>
+          <h2>Философия<br><em>Позитано</em></h2>
+          <div class="hairline"></div>
+          <p>Positano — это не просто ресторан. Это путешествие к берегам Амальфийского побережья, где каждое блюдо рассказывает историю, а каждый вечер превращается в незабываемое воспоминание.</p>
+          <p>Мы верим, что великая итальянская кухня — это прежде всего простота, возведённая в искусство: лучшие ингредиенты, мастерство шефа и тепло подлинного итальянского гостеприимства.</p>
+          <p>Каждое блюдо в нашем меню — дань уважения вековым традициям, переосмысленным с современным изяществом.</p>
+        </div>
+
+        <div class="about-image reveal reveal-right">
+          <div class="about-image-frame">
+            <img src="assets/hf_20260604_124158_e8ebfa1a-0e55-419c-9e0f-ac992148ab73.png" alt="Фирменное блюдо Positano">
+          </div>
+          <div class="about-image-accent"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Menu ───────────────────────────────────────────── -->
+  <section id="menu" class="section section-alt">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">Гастрономия</span>
+        <h2>Наше<br><em>Меню</em></h2>
+        <div class="hairline hairline-center"></div>
+        <p class="section-intro">От antipasti до dolci — каждое блюдо создано с любовью к итальянской традиции и вниманием к детали.</p>
+      </div>
+
+      <div class="menu-courses reveal">
+        <div class="course-item">
+          <span class="course-num">I</span>
+          <h3>Antipasti</h3>
+          <p>Закуски</p>
+        </div>
+        <div class="course-divider"></div>
+        <div class="course-item">
+          <span class="course-num">II</span>
+          <h3>Paste &amp; Risotti</h3>
+          <p>Паста и ризотто</p>
+        </div>
+        <div class="course-divider"></div>
+        <div class="course-item">
+          <span class="course-num">III</span>
+          <h3>Secondi</h3>
+          <p>Горячие блюда</p>
+        </div>
+        <div class="course-divider"></div>
+        <div class="course-item">
+          <span class="course-num">IV</span>
+          <h3>Dolci</h3>
+          <p>Десерты</p>
+        </div>
+      </div>
+
+      <div class="menu-cta reveal">
+        <a href="https://drive.google.com/file/d/1p16Zx5lZiuK_zeTQt5H8prUDo4Y79eEV/view" target="_blank" rel="noopener noreferrer" class="btn-outline">
+          <span>Открыть полное меню</span>
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true">
+            <path d="M2.5 7h9M8 3l4 4-4 4" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── Atmosphere ─────────────────────────────────────── -->
+  <section id="atmosphere" class="section">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">Пространство</span>
+        <h2>Атмосфера<br><em>Позитано</em></h2>
+        <div class="hairline hairline-center"></div>
+        <p class="section-intro">Каждая деталь продумана, чтобы ваш вечер стал особенным.</p>
+      </div>
+
+      <div class="gallery reveal">
+        <div class="gallery-item gallery-item--tall">
+          <img src="assets/377A4754.JPG" alt="Авторское блюдо Positano">
+          <div class="gallery-caption">Авторская кухня</div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/377A8058.JPG" alt="Аперитив Positano">
+          <div class="gallery-caption">Аперитив</div>
+        </div>
+        <div class="gallery-item gallery-item--video">
+          <video autoplay muted loop playsinline>
+            <source src="assets/positano 6th.mp4" type="video/mp4">
+          </video>
+          <div class="gallery-video-veil"></div>
+          <div class="gallery-caption">Вечер в Positano</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ─── Reservation ────────────────────────────────────── -->
+  <section id="reservation" class="section section-alt">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">Бронирование</span>
+        <h2>Забронировать<br><em>столик</em></h2>
+        <div class="hairline hairline-center"></div>
+        <p class="section-intro">Заполните форму — мы свяжемся для подтверждения.<br>Или позвоните нам: <a href="tel:+998993000111">+998 99 300 01 11</a></p>
+      </div>
+
+      <form class="res-form reveal" id="res-form" novalidate>
+        <div class="form-row">
+          <div class="form-field">
+            <label for="f-name">Имя</label>
+            <input type="text" id="f-name" name="name" placeholder="Ваше имя" required autocomplete="name">
+          </div>
+          <div class="form-field">
+            <label for="f-phone">Телефон</label>
+            <input type="tel" id="f-phone" name="phone" placeholder="+998 __ ___ __ __" required autocomplete="tel">
+          </div>
+        </div>
+        <div class="form-row form-row--3">
+          <div class="form-field">
+            <label for="f-date">Дата</label>
+            <input type="date" id="f-date" name="date" required>
+          </div>
+          <div class="form-field">
+            <label for="f-time">Время</label>
+            <select id="f-time" name="time" required>
+              <option value="" disabled selected>— выберите —</option>
+              <option>12:00</option><option>12:30</option>
+              <option>13:00</option><option>13:30</option>
+              <option>14:00</option><option>14:30</option>
+              <option>15:00</option><option>15:30</option>
+              <option>16:00</option><option>16:30</option>
+              <option>17:00</option><option>17:30</option>
+              <option>18:00</option><option>18:30</option>
+              <option>19:00</option><option>19:30</option>
+              <option>20:00</option><option>20:30</option>
+              <option>21:00</option><option>21:30</option>
+              <option>22:00</option><option>22:30</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="f-guests">Гостей</label>
+            <select id="f-guests" name="guests" required>
+              <option value="" disabled selected>—</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8+">8+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="f-notes">Пожелания</label>
+          <textarea id="f-notes" name="notes" rows="3" placeholder="Особые пожелания, аллергии, повод для визита…"></textarea>
+        </div>
+        <div class="form-submit">
+          <button type="submit" class="btn-submit" id="form-btn">
+            <span class="btn-label">Отправить заявку</span>
+            <span class="btn-sent" aria-hidden="true">Заявка принята</span>
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- ─── Footer ─────────────────────────────────────────── -->
+  <footer id="footer">
+    <div class="container">
+
+      <div class="footer-brand">
+        <img src="assets/logo.png" alt="Positano Ristorante" class="footer-logo">
+        <div class="footer-tagline">Ташкент · Италия</div>
+      </div>
+
+      <div class="footer-hairline"></div>
+
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Адрес</h4>
+          <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x38ae8b1d660610ab:0x8d9ea12f7f34b24?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noopener noreferrer" class="footer-link">
+            Taras Shevchenko ko'chasi 38А<br>100060, Ташкент
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>Контакты</h4>
+          <a href="tel:+998993000111" class="footer-link">+998 99 300 01 11</a>
+          <a href="https://www.instagram.com/positano_rest" target="_blank" rel="noopener noreferrer" class="footer-link footer-insta">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+            </svg>
+            @positano_rest
+          </a>
+        </div>
+        <div class="footer-col">
+          <h4>Режим работы</h4>
+          <p class="footer-hours">12:00 — 23:00<br><span>Ежедневно</span></p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Positano Ristorante. Все права защищены.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
