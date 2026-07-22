@@ -388,7 +388,8 @@ h3 {
 }
 
 .hero-logo {
-  width: min(900px, 88vw);
+  width: min(3600px, 94vw);
+  margin-inline: auto;
   height: auto;
   object-fit: contain;
   animation: heroEntrance 1.2s 0.2s var(--ease-out) both;
